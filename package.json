@@ -1,0 +1,38 @@
+{
+  "name": "nodejs-boilerplate",
+  "version": "1.0.0",
+  "description": "starter kit for NodeJS development",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/app.js",
+    "build-css": "node-sass --include-path scss src/scss/main.scss src/public/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bspeidel/nodejs-boilerplate.git"
+  },
+  "author": "Benjamin Speidel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bspeidel/nodejs-boilerplate/issues"
+  },
+  "homepage": "https://github.com/bspeidel/nodejs-boilerplate#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.4.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.2.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.2",
+    "stylelint-config-prettier": "^5.2.0",
+    "stylelint-prettier": "^1.1.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

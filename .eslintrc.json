@@ -1,0 +1,14 @@
+{
+    "extends": "google",
+    "plugins": [],
+    "rules": {
+      "indent": "off",
+      "linebreak-style": ["error", "unix"],
+      "quotes": ["error", "single"],
+      "semi": ["error", "always"],
+      "max-len": ["error", { "code": 130 }],
+      "space-before-function-paren": ["error", "never"],
+      "max-depth": ["error", { "max": 2 }]
+    }
+  }
+  
