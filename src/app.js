@@ -1,13 +1,15 @@
+const express = require('express');
+const favicon = require('serve-favicon');
 const path = require('path');
 const bodyParser = require('body-parser');
-const express = require('express');
-
+const appRoutes = require('./routes/index.js');
 const app = express();
 
-const appRoutes = require('./routes/index.js');
-
-app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(
+  favicon(path.join(__dirname, 'public', 'img', 'favicons', 'favicon.ico'))
+);
+app.use(bodyParser.urlencoded({extended: false}));
 
 app.use(appRoutes);
 app.use((req, res, next) => {
