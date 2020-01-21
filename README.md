@@ -4,9 +4,11 @@ starter kit for NodeJS development.
 
 ## Some features
 
-express
-bootstrap 4
-scss
+- express
+
+- bootstrap 4
+
+- scss
 
 ## Installation & Running
 
