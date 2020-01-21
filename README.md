@@ -1,5 +1,7 @@
 # JavaScript Boilerplate
 
+[![Run on Repl.it](https://repl.it/badge/github/bspeidel/nodejs-boilerplate)](https://repl.it/github/bspeidel/nodejs-boilerplate)
+
 starter kit for NodeJS development.
 
 ## Some features
